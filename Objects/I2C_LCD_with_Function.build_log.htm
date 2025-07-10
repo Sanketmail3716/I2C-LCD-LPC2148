@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sanketm SanketM, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.20
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARM.DLL V5.20
+Dialog DLL:      DARMP.DLL V1.52.0.0
+Target DLL:      UL2ARM.DLL V1.74.8.0
+Dialog DLL:      TARMP.DLL V1.52.0.0
+ 
+<h2>Project:</h2>
+G:\My Drive\Envision\ARM_Microcontoller\I2C\I2C_LCD_with_function\I2C_LCD_with_Function.uvproj
+Project File Date:  01/27/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling LCD_I2C.c...
+LCD_I2C.h(21): warning:  #1-D: last line of file ends without a newline
+  void LCD_Write_String(char* Str);
+LCD_I2C.c(8): warning:  #223-D: function "Delay" declared implicitly
+    Delay(5);
+LCD_I2C.c(25): warning:  #223-D: function "i2c_start" declared implicitly
+     i2c_start();
+LCD_I2C.c(26): warning:  #223-D: function "i2c_write" declared implicitly
+  	 i2c_write(i2c_add);
+LCD_I2C.c(28): warning:  #223-D: function "i2c_stop" declared implicitly
+     i2c_stop();
+LCD_I2C.c(37): warning:  #223-D: function "Delay" declared implicitly
+    Delay(5);
+LCD_I2C.c(57): warning:  #1-D: last line of file ends without a newline
+  }
+LCD_I2C.c: 7 warnings, 0 errors
+compiling I2C.c...
+I2C.h(4): warning:  #1295-D: Deprecated declaration i2c_init - give arg types
+  void i2c_init();
+I2C.h(5): warning:  #1295-D: Deprecated declaration i2c_start - give arg types
+  void i2c_start();
+I2C.h(7): warning:  #1295-D: Deprecated declaration i2c_read - give arg types
+  unsigned char i2c_read();
+I2C.h(8): warning:  #1295-D: Deprecated declaration i2c_stop - give arg types
+  void i2c_stop();
+I2C.c(34): warning:  #1-D: last line of file ends without a newline
+  }
+I2C.c: 5 warnings, 0 errors
+assembling Startup.s...
+compiling I2C_LCD_with_Function.c...
+LCD_I2C.h(21): warning:  #1-D: last line of file ends without a newline
+  void LCD_Write_String(char* Str);
+I2C.h(4): warning:  #1295-D: Deprecated declaration i2c_init - give arg types
+  void i2c_init();
+I2C.h(5): warning:  #1295-D: Deprecated declaration i2c_start - give arg types
+  void i2c_start();
+I2C.h(7): warning:  #1295-D: Deprecated declaration i2c_read - give arg types
+  unsigned char i2c_read();
+I2C.h(8): warning:  #1295-D: Deprecated declaration i2c_stop - give arg types
+  void i2c_stop();
+I2C_LCD_with_Function.c(10): warning:  #951-D: return type of function "main" must be "int"
+  void main (void)
+I2C_LCD_with_Function.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=1444 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+".\Objects\I2C_LCD_with_Function.axf" - 0 Error(s), 18 Warning(s).
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

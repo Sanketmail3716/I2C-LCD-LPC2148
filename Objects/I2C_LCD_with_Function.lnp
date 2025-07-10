@@ -1,0 +1,9 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\i2c_lcd_with_function.o"
+".\objects\i2c.o"
+".\objects\lcd_i2c.o"
+--strict --scatter ".\Objects\I2C_LCD_with_Function.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\I2C_LCD_with_Function.map" -o .\Objects\I2C_LCD_with_Function.axf
